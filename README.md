@@ -4,6 +4,6 @@
 
 ### Desenvolvedores: 
 
-Antonio Carlos Borges de Souza - ;
-Ítalo Ricardo de Andrade Silva - italogod96@gmail.com;
+Antonio Carlos Borges de Souza - ; </br>
+Ítalo Ricardo de Andrade Silva - italogod96@gmail.com; </br>
 Kauê Andrade dos Santos - kauedd22@gmail.com.
