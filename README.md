@@ -1,3 +1,3 @@
 # God Of Game
 
-![godofgame](https://imgur.com/itBBFaZ)
+![godofgame](https://i.imgur.com/itBBFaZ.mp4)
