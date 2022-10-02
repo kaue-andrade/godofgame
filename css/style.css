@@ -129,6 +129,7 @@ body {
 
 #footer .footer-content .footer-menu .footer-menu-item {
     margin: 25px 0;
+    transition: all 300ms aese;
 }
 
 #footer .footer-content .footer-menu p {
@@ -145,6 +146,7 @@ body {
 .socials i {
     margin: 0 20px;
     font-size: 1.7rem;
+    transition: all 300ms ease;
 }
 
 /* footer info*/
@@ -157,7 +159,7 @@ body {
     margin: auto;
     font-weight: bold;
     color: #919496;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     padding-top: 50px;
 }
 
@@ -168,6 +170,7 @@ body {
 
 .footer-info .footer-info-items .footer-info-item {
     margin: 0 10px;
+    transition: all 300ms ease;
 }
 
 .footer-info .rights .country{
@@ -175,6 +178,10 @@ body {
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 10px;
+}
+
+.footer-info .rights .country p {
+    transition: all 300ms ease;
 }
 
 .footer-info .rights .country .brasil-flag {
