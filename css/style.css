@@ -11,7 +11,7 @@ body {
 /* Utility Classes */
 
 .btn-primary{
-    background: red; 
+    background: purple; 
     color: white;
     text-transform: uppercase;
     padding: 15px 60px;
@@ -23,7 +23,7 @@ body {
 }
 
 .btn-primary {
-    background: #ff2b2b;
+    background: #eb00e6;
     cursor: pointer;
 }
 
