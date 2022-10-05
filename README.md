@@ -2,6 +2,10 @@
 
 ![godofgame](https://i.imgur.com/imE1Myd.png)
 
+### Link do site: 
+
+https://kaue-andrade.github.io/godofgame/index.html
+
 ### Desenvolvedores: 
 
 Antonio Carlos Borges de Souza - antoniocarlos06b@gmail.com; </br>
