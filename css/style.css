@@ -39,6 +39,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 #navbar .navbar-container {
@@ -78,8 +79,6 @@ body {
 #navbar .navbar-container ul li:nth-child(3) {
     border-left: 1.8px solid white;
 }
-
-
 
 /* Showcase */
 
