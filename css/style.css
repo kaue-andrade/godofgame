@@ -28,6 +28,11 @@ body {
     transition: all 300ns ease;
 }
 
+.btn-primary {
+    background: #eb00e6;
+    cursor: pointer;
+}
+
 /* Navbar */
 #navbar{
     display: flex;
