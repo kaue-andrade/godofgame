@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/controle-de-video-game.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>God of Game - Cadastro</title>
+    <style>
+
+        * {
+            border-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+       body {
+            background-color: rgba(0, 0, 0, 0.9)
+       }
+
+       input{
+            outline: none;
+            border: none;
+            padding: 15px;
+            border-radius: 15px;
+            font-size: 15px;
+        }
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 1000px;
+            border-radius: 15px;
+            color: #fff;
+        }
+        button{
+            background-color: dodgerblue;
+            color: white;
+            width: 100%;
+            border-radius: 10px;
+            font-size: 15px;
+            border: none;
+            padding: 15px;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        /* Navbar */
+        #navbar{
+            display: flex;
+            background-color: black;
+            color: white;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        nav ul li {
+            margin-right: 50px;
+            text-align: center;
+        }
+
+        #navbar .navbar-container {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+
+        .logo {
+            text-align: center;
+            height: 100px;
+            width: auto;
+        }
+
+        #navbar .navbar-container ul {
+            display: flex;
+            list-style: none;
+            font-weight: bold;
+        }
+
+        #navbar .navbar-container ul li {
+            padding: 0 90px;
+            transition: all 300ns ease;
+        }
+
+        #navbar .navbar-container ul li:hover {
+            color: #eb00e6;
+            cursor: pointer;
+        }
+
+        #navbar .navbar-container ul li:nth-child(1) {
+            border-right: 1px solid white;
+        }
+
+        #navbar .navbar-container ul li:nth-child(3) {
+            border-left: 1.8px solid white;
+        }
+
+        #navbar .navbar-container ul li:nth-child(4) {
+            border-left: 1.8px solid white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--Navbar-->
+    <navbar id="navbar">
+        <a href="index.html"><img src="imagens/logo1.gif" alt="Logo" class="logo"></a>
+        <div class="navbar-container">
+            <ul class="navbar-items">
+                <li class="navbar-item"><a href="index.html" style="color: white;">Início</a></li>
+                
+                <li class="navbar-item"><a href="#123" style="color: white;">Jogos</a></li>
+                <li class="navbar-item"><a href="" style="color: white;">Quem somos</a></li>
+                <li class="navbar-item"><a href="cadastro.html" style="color: white;">Cadastro</a></li>
+            </ul>
+    </div>
+    </navbar>
+
+    <div>
+        <h1>Cadastrar</h1>
+        <input type="text" placeholder="Email">
+        <br><br>
+        <input type="password" placeholder="Senha">
+        <br><br>
+        <input type="password" placeholder="Senha">
+        <br><br>
+        <button>Cadastrar</button>
+    </div>
+</body>
+</html>
