@@ -1,6 +1,6 @@
 # God Of Game - IFBa _campus_ Euclides da Cunha
 
-![godofgame_gif](https://i.im.ge/2022/10/09/1GsgUr.logo1.gif)
+![godofgame](https://i.imgur.com/imE1Myd.png)
 
 ### Link úteis: 
 
