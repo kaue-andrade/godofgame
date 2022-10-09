@@ -3,9 +3,10 @@
 ![godofgame](https://i.imgur.com/imE1Myd.png)
 ![Cantina gif](https://s7.gifyu.com/images/logo1.md.gif)
 
-### Link do site: 
+### Link úteis: 
 
-https://kaue-andrade.github.io/godofgame/index.html
+https://kaue-andrade.github.io/godofgame/index.html </br>
+https://trello.com/b/zDWBsCMt/gest%C3%A3o-de-projetos
 
 ### Desenvolvedores: 
 
