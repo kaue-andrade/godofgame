@@ -1,7 +1,7 @@
 # God of Game - IFBa _campus_ Euclides da Cunha
 
 <p align="center">
-  <img src="https://i.imgur.com/imE1Myd.png" alt="Fila"/>
+  <img src="https://i.imgur.com/imE1Myd.png" alt="Fila">
 </p>
 
 # Link úteis: 
@@ -20,7 +20,7 @@ Kauê Andrade dos Santos - kauedd22@gmail.com.
 <p align="center"><em> A Gof of Game foi construída com o intuito de melhorar a experiência do usuário em relação ao mercado online de jogos. Compre na loja e obtenha os melhores preços de todo território nacional.</em></p>
 
 <p align="center">
-  <img src="http://1.bp.blogspot.com/-mk5B-eAgDXU/UYAndqPxTEI/AAAAAAAADk0/oEaBwUINhHI/s640/l6Xgvsw+-+Imgur.gif" alt="Fila"/>
+  <img src="http://1.bp.blogspot.com/-mk5B-eAgDXU/UYAndqPxTEI/AAAAAAAADk0/oEaBwUINhHI/s640/l6Xgvsw+-+Imgur.gif" alt="Fila">
 </p>
 
 <p align="center"><em> A melhor loja de jogos do Brasil.</em></p>
