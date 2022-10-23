@@ -16,3 +16,5 @@ Kauê Andrade dos Santos - kauedd22@gmail.com.
 <p align="center">
   <img src="http://1.bp.blogspot.com/-mk5B-eAgDXU/UYAndqPxTEI/AAAAAAAADk0/oEaBwUINhHI/s640/l6Xgvsw+-+Imgur.gif" alt="Fila"/>
 </p>
+
+<strong align="center">A melhor loja de jogos do brasil.</strong>
