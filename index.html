@@ -24,8 +24,32 @@
         }
 
         .produto-single {
-        width: 33.3%;
-        padding: 0 20px;
+        text-align: center;
+        width: 32%;
+        margin-right: 1%;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+        margin-bottom: 20px; 
+        }
+
+        .produto-single img {
+            margin: 10px 0;
+            max-width: 100%;
+        }
+
+        .produto-single p {
+            padding: 10px;
+
+        }
+
+        .produto-single a {
+            text-decoration: none;
+            color: white;
+            background-color: #eb00e6;
+            display: block;
+            padding: 4px 0;
+            font-size: 18px;
+            cursor: pointer;
         }
 
         h2 {
@@ -35,18 +59,20 @@
 
         p {
             color:white;
+            font-weight: bold;
         }
 
         .container-jogos {
             background-color: black;
         }
 
-        img {
+        #img-jogos {
             border-radius: 30px;
         }
     </style>
 </head>
 <body>
+
     <!--Navbar-->
     <navbar id="navbar">
         <a href="index.html"><img src="imagens/logo1.gif" alt="Logo" class="logo"></a>
@@ -128,22 +154,31 @@
         const itens = [
         {
             id: 0,
-            nome:'Fifa 23',
+            nome:'FIFA 23',
             imagem: 'imagens_jogos/fifa-23-180-240.png',
             quantidade: 0,
-            preco: 299
+            preco: 299.00
         },
         {
             id: 1,
-            nome:'jogo02',
-            imagem: 'imagens/controle-de-video-game.png',
-            quantidade: 0
+            nome:'Katana ZERO',
+            imagem: 'imagens_jogos/katana-zero.jpg',
+            quantidade: 0,
+            preco: 28.99
         },
         {
             id: 2,
-            nome:'jogo03',
-            imagem: 'imagens/controle-de-video-game.png',
-            quantidade: 0
+            nome:'Phasmophobia',
+            imagem: 'imagens_jogos/phasmophobia.jpg',
+            quantidade: 0,
+            preco: 27.89
+        },
+        {
+            id: 3,
+            nome:'Little Nightmares',
+            imagem: 'imagens_jogos/little_nightmares.png',
+            quantidade: 0,
+            preco: 79.99
         },
     ]
 
@@ -152,10 +187,10 @@
         itens.map((val) => {
             containerProdutos.innerHTML += `
             <div class="produto-single">
-                <img src="`+val.imagem+`" />
+                <img src="`+val.imagem+`" / id="img-jogos">
                 <p>`+val.nome+`</p>
                 <p>R$ `+val.preco+`</p>
-                <a key="`+val.id+`" href="#carrinho">Adicionar ao carrinho<a/>
+                <a key="`+val.id+`">Adicionar ao carrinho<a/>
             </div>
             `;
         })

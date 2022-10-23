@@ -218,6 +218,7 @@ input {
     width: 50%;
     margin: auto;
     justify-content: space-between;
+    text-align: center;
 }
 
 #footer .footer-content .footer-menu {
