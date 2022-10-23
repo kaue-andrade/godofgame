@@ -8,6 +8,43 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>God of Games</title>
+    <style>
+        #produtos{
+        max-width: 900px; 
+        margin: 0 auto;
+        padding: 0 2%;
+        display: flex;
+        }
+
+        #carrinho{
+        max-width: 900px; 
+        margin: 0 auto;
+        padding: 0 2%;
+        display: block;
+        }
+
+        .produto-single {
+        width: 33.3%;
+        padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+        }
+
+        p {
+            color:white;
+        }
+
+        .container-jogos {
+            background-color: black;
+        }
+
+        img {
+            border-radius: 30px;
+        }
+    </style>
 </head>
 <body>
     <!--Navbar-->
@@ -75,6 +112,84 @@
     </div>
     </div>
 
+    <!--Jogos-->
+
+    <div class="container-jogos">
+    <h2>Jogos</h2>
+    <div id="produtos">
+
+    </div>
+
+    <h2>Carrinho</h2>
+    <div id="carrinho">
+        
+    </div>
+
+    <script>
+        const itens = [
+        {
+            id: 0,
+            nome:'Fifa 23',
+            imagem: 'imagens_jogos/fifa-23-180-240.png',
+            quantidade: 0,
+            preco: 299
+        },
+        {
+            id: 1,
+            nome:'jogo02',
+            imagem: 'imagens/controle-de-video-game.png',
+            quantidade: 0
+        },
+        {
+            id: 2,
+            nome:'jogo03',
+            imagem: 'imagens/controle-de-video-game.png',
+            quantidade: 0
+        },
+    ]
+
+    inicializarLoja = () => {
+        var containerProdutos = document.getElementById('produtos');
+        itens.map((val) => {
+            containerProdutos.innerHTML += `
+            <div class="produto-single">
+                <img src="`+val.imagem+`" />
+                <p>`+val.nome+`</p>
+                <p>R$ `+val.preco+`</p>
+                <a key="`+val.id+`" href="#carrinho">Adicionar ao carrinho<a/>
+            </div>
+            `;
+        })
+    }
+
+    inicializarLoja();
+
+    atualizarCarrinho = () => {
+        var containerCarrinho = document.getElementById('carrinho');
+        containerCarrinho.innerHTML = "";
+        itens.map((val) => {
+            if(val.quantidade>0){
+            containerCarrinho.innerHTML += `
+            <p>`+val.nome+` | Quantidade: `+val.quantidade+`</p>
+            <hr>
+            `;
+        }
+        })
+    }
+        
+    var links = document.getElementsByTagName('a');
+
+    for (var i = 0; i < links.length; i++){
+        links[i].addEventListener("click", function(){
+            let key = this.getAttribute('key');
+            itens[key].quantidade++;
+            atualizarCarrinho();
+            return false;
+        })
+    }
+
+    </script>
+    </div>
     <!-- Footer-->
 
     <footer id="footer">
