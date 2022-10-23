@@ -2,12 +2,12 @@
 
 ![godofgame](https://i.imgur.com/imE1Myd.png)
 
-### Link úteis: 
+# Link úteis: 
 
 **Site**: https://kaue-andrade.github.io/godofgame/index.html </br>
 **Trello**: https://trello.com/b/zDWBsCMt/gest%C3%A3o-de-projetos
 
-### Desenvolvedores: 
+# Desenvolvedores: 
 
 Antonio Carlos Borges de Souza - antoniocarlos06b@gmail.com; </br>
 Ítalo Ricardo de Andrade Silva - italogod96@gmail.com; </br>
