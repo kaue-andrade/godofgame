@@ -4,7 +4,7 @@
   <img src="https://i.imgur.com/imE1Myd.png" alt="Fila">
 </p>
 
-# Link úteis: 
+# Links úteis: 
 
 **Site**: https://kaue-andrade.github.io/godofgame/index.html </br>
 **Trello**: https://trello.com/b/zDWBsCMt/gest%C3%A3o-de-projetos
