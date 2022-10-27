@@ -7,9 +7,13 @@
     <link rel="shortcut icon" href="imagens/controle-de-video-game.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>God of Games</title>
     <style>
-        #produtos{
+        #jogos-2d, #puzzle-terror{
         max-width: 900px; 
         margin: 0 auto;
         padding: 0 2%;
@@ -42,7 +46,7 @@
 
         }
 
-        .produto-single a {
+        .produto-single #adicionar-carrinho {
             text-decoration: none;
             color: white;
             background-color: #eb00e6;
@@ -55,6 +59,7 @@
         h2 {
             text-align: center;
             color: white;
+            font-family: 'Montserrat', sans-serif;
         }
 
         p {
@@ -140,9 +145,21 @@
     <!--Jogos-->
 
     <div class="container-jogos">
+    <br>
     <h2>Jogos</h2>
-    <div id="produtos">
+    <br>
+    <hr id="divisao-jogos">
+    <br>
+    <h2>Jogos 2D</h2>
+    <div id="jogos-2d">
+    </hr>
+    </div>
 
+    <hr>
+
+
+    <div id="puzzle-terror">
+    </hr>
     </div>
 
     <h2>Carrinho</h2>
@@ -151,30 +168,30 @@
     </div>
 
     <script>
-        const itens = [
+        const itens1 = [
         {
-            id: 0,
-            nome:'FIFA 23',
+            id: "2d-teste",
+            nome:'FIFA-23',
             imagem: 'imagens_jogos/fifa-23-180-240.png',
             quantidade: 0,
             preco: 299.00
         },
         {
-            id: 1,
-            nome:'Katana ZERO',
+            id: "2d-katana-zero",
+            nome:'Katana-zero',
             imagem: 'imagens_jogos/katana-zero.jpg',
             quantidade: 0,
             preco: 28.99
         },
         {
-            id: 2,
-            nome:'Phasmophobia',
+            id: '2d-phasmophobia',
+            nome:'2d-phasmophobia',
             imagem: 'imagens_jogos/phasmophobia.jpg',
             quantidade: 0,
             preco: 27.89
         },
         {
-            id: 3,
+            id: "2d-little-nightmares",
             nome:'Little Nightmares',
             imagem: 'imagens_jogos/little_nightmares.png',
             quantidade: 0,
@@ -183,14 +200,14 @@
     ]
 
     inicializarLoja = () => {
-        var containerProdutos = document.getElementById('produtos');
-        itens.map((val) => {
-            containerProdutos.innerHTML += `
+        var containerJogos2D = document.getElementById('jogos-2d');
+        itens1.map((val) => {
+            containerJogos2D.innerHTML += `
             <div class="produto-single">
-                <img src="`+val.imagem+`" / id="img-jogos">
+                <a href="jogos/fifa23.html" target="_blank"><img src="`+val.imagem+`" / id="img-jogos"></a>
                 <p>`+val.nome+`</p>
                 <p>R$ `+val.preco+`</p>
-                <a key="`+val.id+`">Adicionar ao carrinho<a/>
+                <a key="`+val.id+`" id="adicionar-carrinho">Adicionar ao carrinho<a/>
             </div>
             `;
         })
@@ -198,17 +215,64 @@
 
     inicializarLoja();
 
+    const itens2 = [
+        {
+            id: "jogo1",
+            nome:'FIFA 23',
+            imagem: 'imagens_jogos/fifa-23-180-240.png',
+            quantidade: 0,
+            preco: 299.00
+        },
+        {
+            id: "jogo2",
+            nome:'Katana ZERO',
+            imagem: 'imagens_jogos/katana-zero.jpg',
+            quantidade: 0,
+            preco: 28.99
+        },
+        {
+            id: "jogo3",
+            nome:'Phasmophobia',
+            imagem: 'imagens_jogos/phasmophobia.jpg',
+            quantidade: 0,
+            preco: 27.89
+        },
+        {
+            id: "jogo4",
+            nome:'Little Nightmares',
+            imagem: 'imagens_jogos/little_nightmares.png',
+            quantidade: 0,
+            preco: 79.99
+        },
+    ]
+
+    inicializarLoja = () => {
+        var containerPuzzleTerror = document.getElementById('puzzle-terror');
+        itens2.map((val) => {
+            containerPuzzleTerror.innerHTML += `
+            <div class="produto-single">
+                <a href="jogos/fifa23.html"><img src="`+val.imagem+`" / id="img-jogos"></a>
+                <p>`+val.nome+`</p>
+                <p>R$ `+val.preco+`</p>
+                <a key="`+val.id+`" id="adicionar-carrinho">Adicionar ao carrinho<a/>
+            </div>
+            `;
+        })
+    }
+
+    inicializarLoja();
+    
     atualizarCarrinho = () => {
         var containerCarrinho = document.getElementById('carrinho');
         containerCarrinho.innerHTML = "";
-        itens.map((val) => {
+        itens1.map((val) || itens2.map((val) => {
             if(val.quantidade>0){
             containerCarrinho.innerHTML += `
             <p>`+val.nome+` | Quantidade: `+val.quantidade+`</p>
             <hr>
             `;
         }
-        })
+        }))
     }
         
     var links = document.getElementsByTagName('a');
@@ -216,7 +280,7 @@
     for (var i = 0; i < links.length; i++){
         links[i].addEventListener("click", function(){
             let key = this.getAttribute('key');
-            itens[key].quantidade++;
+            itens1[key].quantidade++ || itens2[key].quantidade++;
             atualizarCarrinho();
             return false;
         })
