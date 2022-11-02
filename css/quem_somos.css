@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro');
+
+body{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+
+h1{
+ font-size: 40px;
+ text-transform: uppercase;
+ letter-spacing: 3px;
+}
+
+h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.borda{
+    width: 500px;
+    height: 600px;
+
+}
+.nomes{
+    float: left;
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 0px 20px 20px 0;
+    max-width: 186px;
+
+
+}
+.imagens{
+    float: right;
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 0px 30px 20px 0;
+    max-width: 186px;
+
+}

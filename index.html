@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>God of Games</title>
     <style>
-        #jogos-2d, #puzzle-terror{
+         #produtos{
         max-width: 900px; 
         margin: 0 auto;
         padding: 0 2%;
@@ -46,7 +46,7 @@
 
         }
 
-        .produto-single #adicionar-carrinho {
+        .produto-single a {
             text-decoration: none;
             color: white;
             background-color: #eb00e6;
@@ -59,7 +59,6 @@
         h2 {
             text-align: center;
             color: white;
-            font-family: 'Montserrat', sans-serif;
         }
 
         p {
@@ -73,6 +72,7 @@
 
         #img-jogos {
             border-radius: 30px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -83,8 +83,8 @@
         <a href="index.html"><img src="imagens/logo1.gif" alt="Logo" class="logo"></a>
         <div class="navbar-container">
             <ul class="navbar-items">
-                <li class="navbar-item"><a href="index.html" style="color: white; text-decoration: none;">Início</a></li>
-                <li class="navbar-item"><a href="#jogos-slides" style="color: white; text-decoration: none;">Jogos</a></li>
+                <li class="navbar-item" style="height: 19; width: 38.52;"><a href="index.html" style="color: white; text-decoration: none;">Início</a></li>
+                <li class="navbar-item"><a href="index.html#jogos" style="color: white; text-decoration: none;">Jogos</a></li>
                 <li class="navbar-item"><a href="quem_somos.html" style="color: white; text-decoration: none;">Quem somos</a></li>
             </ul>
     </div>
@@ -97,6 +97,12 @@
             <p>A melhor loja de jogos do Brasil.</p>
             <a href="#jogos-slides"><button class="btn-primary">Veja os nossos jogos</button></a>
         </div>
+    </div>
+
+    <!--Informações básicas-->
+
+    <div class="info-bas">
+        
     </div>
 
     <!--Slides-->
@@ -145,149 +151,108 @@
     <!--Jogos-->
 
     <div class="container-jogos">
-    <br>
-    <h2>Jogos</h2>
-    <br>
-    <hr id="divisao-jogos">
-    <br>
-    <h2>Jogos 2D</h2>
-    <div id="jogos-2d">
-    </hr>
-    </div>
-
-    <hr>
-
-
-    <div id="puzzle-terror">
-    </hr>
-    </div>
-
-    <h2>Carrinho</h2>
-    <div id="carrinho">
-        
-    </div>
-
-    <script>
-        const itens1 = [
-        {
-            id: "2d-teste",
-            nome:'FIFA-23',
-            imagem: 'imagens_jogos/fifa-23-180-240.png',
-            quantidade: 0,
-            preco: 299.00
-        },
-        {
-            id: "2d-katana-zero",
-            nome:'Katana-zero',
-            imagem: 'imagens_jogos/katana-zero.jpg',
-            quantidade: 0,
-            preco: 28.99
-        },
-        {
-            id: '2d-phasmophobia',
-            nome:'2d-phasmophobia',
-            imagem: 'imagens_jogos/phasmophobia.jpg',
-            quantidade: 0,
-            preco: 27.89
-        },
-        {
-            id: "2d-little-nightmares",
-            nome:'Little Nightmares',
-            imagem: 'imagens_jogos/little_nightmares.png',
-            quantidade: 0,
-            preco: 79.99
-        },
-    ]
-
-    inicializarLoja = () => {
-        var containerJogos2D = document.getElementById('jogos-2d');
-        itens1.map((val) => {
-            containerJogos2D.innerHTML += `
-            <div class="produto-single">
-                <a href="jogos/fifa23.html" target="_blank"><img src="`+val.imagem+`" / id="img-jogos"></a>
-                <p>`+val.nome+`</p>
-                <p>R$ `+val.preco+`</p>
-                <a key="`+val.id+`" id="adicionar-carrinho">Adicionar ao carrinho<a/>
-            </div>
-            `;
-        })
-    }
-
-    inicializarLoja();
-
-    const itens2 = [
-        {
-            id: "jogo1",
-            nome:'FIFA 23',
-            imagem: 'imagens_jogos/fifa-23-180-240.png',
-            quantidade: 0,
-            preco: 299.00
-        },
-        {
-            id: "jogo2",
-            nome:'Katana ZERO',
-            imagem: 'imagens_jogos/katana-zero.jpg',
-            quantidade: 0,
-            preco: 28.99
-        },
-        {
-            id: "jogo3",
-            nome:'Phasmophobia',
-            imagem: 'imagens_jogos/phasmophobia.jpg',
-            quantidade: 0,
-            preco: 27.89
-        },
-        {
-            id: "jogo4",
-            nome:'Little Nightmares',
-            imagem: 'imagens_jogos/little_nightmares.png',
-            quantidade: 0,
-            preco: 79.99
-        },
-    ]
-
-    inicializarLoja = () => {
-        var containerPuzzleTerror = document.getElementById('puzzle-terror');
-        itens2.map((val) => {
-            containerPuzzleTerror.innerHTML += `
-            <div class="produto-single">
-                <a href="jogos/fifa23.html"><img src="`+val.imagem+`" / id="img-jogos"></a>
-                <p>`+val.nome+`</p>
-                <p>R$ `+val.preco+`</p>
-                <a key="`+val.id+`" id="adicionar-carrinho">Adicionar ao carrinho<a/>
-            </div>
-            `;
-        })
-    }
-
-    inicializarLoja();
+        <br>
+        <h2 id="jogos">Jogos</h2>
+        <div id="produtos">
     
-    atualizarCarrinho = () => {
-        var containerCarrinho = document.getElementById('carrinho');
-        containerCarrinho.innerHTML = "";
-        itens1.map((val) || itens2.map((val) => {
-            if(val.quantidade>0){
-            containerCarrinho.innerHTML += `
-            <p>`+val.nome+` | Quantidade: `+val.quantidade+`</p>
-            <hr>
-            `;
+        </div>
+    
+        <h2>Carrinho</h2>
+        <div id="carrinho">
+            
+        </div>
+    
+        <script>
+            const itens = [
+            {
+                id: 0,
+                nome:'Katana ZERO',
+                imagem: 'imagens_jogos/katana-zero-180-240.jpg',
+                quantidade: 0,
+                preco: 28.99
+            },
+            {
+                id: 1,
+                nome:'Dead Cells',
+                imagem: 'imagens_jogos/dead-cells-180-240.png',
+                quantidade: 0,
+                preco: 47.49
+            },
+            {
+                id: 2,
+                nome:'Celeste',
+                imagem: 'imagens_jogos/celeste-180-240.jpg',
+                quantidade: 0,
+                preco: 36.99
+            },
+            {
+                id: 3,
+                nome:'Phasmophobia',
+                imagem: 'imagens_jogos/phasmophobia.jpg',
+                quantidade: 0,
+                preco: 27.89
+            },
+        ]
+    
+        inicializarLoja = () => {
+            var containerProdutos = document.getElementById('produtos');
+            itens.map((val) => {
+                if (val.id <= 2){
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <p>Jogo 2D</p>
+                    <img src="`+val.imagem+`" / id="img-jogos">
+                    <p>`+val.nome+`</p>
+                    <p>R$ `+val.preco+`</p>
+                    <a key="`+val.id+`">Adicionar ao carrinho<a/>
+                </div>
+                `;
+                }
+
+                if (val.id >= 3 && val.id <=5){
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <p>Puzzle/Terror</p>
+                    <img src="`+val.imagem+`" / id="img-jogos">
+                    <p>`+val.nome+`</p>
+                    <p>R$ `+val.preco+`</p>
+                    <a key="`+val.id+`">Adicionar ao carrinho<a/>
+                </div>
+                `;
+                }
+            }
+            )
         }
-        }))
-    }
-        
-    var links = document.getElementsByTagName('a');
+    
+        inicializarLoja();
+    
+        atualizarCarrinho = () => {
+            var containerCarrinho = document.getElementById('carrinho');
+            containerCarrinho.innerHTML = "";
+            itens.map((val) => {
+                if(val.quantidade>0){
+                containerCarrinho.innerHTML += `
+                <p>`+val.nome+` | Quantidade: `+val.quantidade+`</p>
+                <hr>
+                `;
+            }
+            })
+        }
+            
+        var links = document.getElementsByTagName('a');
+    
+        for (var i = 0; i < links.length; i++){
+            links[i].addEventListener("click", function(){
+                let key = this.getAttribute('key');
+                itens[key].quantidade++;
+                atualizarCarrinho();
+                return false;
+            })
+        }
+    
+        </script>
+    </div>        
 
-    for (var i = 0; i < links.length; i++){
-        links[i].addEventListener("click", function(){
-            let key = this.getAttribute('key');
-            itens1[key].quantidade++ || itens2[key].quantidade++;
-            atualizarCarrinho();
-            return false;
-        })
-    }
-
-    </script>
-    </div>
     <!-- Footer-->
 
     <footer id="footer">
@@ -301,9 +266,9 @@
             </ul>
 
             <div class="socials">					
-                <a href="https://www.instagram.com/ifbaeuclides/" style="color: white;" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com" style="color: white;" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.facebook.com/IFBAEuclides" style="color: white;" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ifbaeuclides/" style="color: white; height: 23.72px;" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" style="color: white; height: 23.72px;" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/IFBAEuclides" style="color: white; height: 23.72px;" target="_blank"><i class="fab fa-facebook-f"></i></a>
             </div>
         </div>
         <div class="footer-info">
