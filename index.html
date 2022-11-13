@@ -18,6 +18,7 @@
         margin: 0 auto;
         padding: 0 2%;
         display: flex;
+        flex-wrap: wrap;
         }
 
         #carrinho{
@@ -46,7 +47,7 @@
 
         }
 
-        .produto-single a {
+        .produto-single a{
             text-decoration: none;
             color: white;
             background-color: #eb00e6;
@@ -74,10 +75,32 @@
             border-radius: 30px;
             cursor: pointer;
         }
+
+        #img-id {
+            background-color: black;
+        }
+
+        
+        section {
+            width: 1280px;
+        }
+
+        @media (max-width: 1200px) {
+            selection{
+                width: 1000px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            selection{
+                height: 400px;
+                width: 575px;
+            }
+        }
     </style>
 </head>
 <body>
-
+    <section>
     <!--Navbar-->
     <navbar id="navbar">
         <a href="index.html"><img src="imagens/logo1.gif" alt="Logo" class="logo"></a>
@@ -188,20 +211,98 @@
             {
                 id: 3,
                 nome:'Phasmophobia',
-                imagem: 'imagens_jogos/phasmophobia.jpg',
+                imagem: 'imagens_jogos/phasmophobia-180-240.jpg',
                 quantidade: 0,
                 preco: 27.89
+            },
+            {
+                id: 4,
+                nome:'Little Nightmares',
+                imagem: 'imagens_jogos/little-nightmares.png',
+                quantidade: 0,
+                preco: 79.99
+            },
+            {
+                id: 5,
+                nome:'Little Nightmares II',
+                imagem: 'imagens_jogos/little-nightmares-ii-180-240.png',
+                quantidade: 0,
+                preco: 52.63
+            },
+            {
+                id: 6,
+                nome:'Paladins',
+                imagem: 'imagens_jogos/paladins-180-240.png',
+                quantidade: 0,
+                preco: 0
+            },
+            {
+                id: 7,
+                nome:'CS:GO',
+                imagem: 'imagens_jogos/cs_go-180-240.png',
+                quantidade: 0,
+                preco: 0
+            },
+            {
+                id: 8,
+                nome:'Veloren',
+                imagem: 'imagens_jogos/veloren-180-240.png',
+                quantidade: 0,
+                preco: 0
+            },
+            {
+                id: 9,
+                nome:'Zelda Breath of The Wild',
+                imagem: 'imagens_jogos/zelda-breath-of-the-wild-180-240.png',
+                quantidade: 0,
+                preco: 345
+            },
+            {
+                id: 10,
+                nome:'Gof of War 2018',
+                imagem: 'imagens_jogos/gof-of-war-2018-180-240.png',
+                quantidade: 0,
+                preco: 263.91
+            },
+            {
+                id: 11,
+                nome:'Gof of War Ragnarok',
+                imagem: 'imagens_jogos/gof-of-war-ragnarok-180-240.png',
+                quantidade: 0,
+                preco: 307.99
+            },
+            {
+                id: 12,
+                nome:'Devil My Cry 5',
+                imagem: 'imagens_jogos/devil-my-cry-5-180-240.png',
+                quantidade: 0,
+                preco: 303.29
+            },
+            {
+                id: 13,
+                nome:'Spider-Man',
+                imagem: 'imagens_jogos/spider-man-180-240.png',
+                quantidade: 0,
+                preco: 142.71
+            },
+            {
+                id: 14,
+                nome:'FIFA 23',
+                imagem: 'imagens_jogos/fifa-23-180-240.png',
+                quantidade: 0,
+                preco: 263.99
             },
         ]
     
         inicializarLoja = () => {
             var containerProdutos = document.getElementById('produtos');
             itens.map((val) => {
-                if (val.id <= 2){
+
+                if (val.id == 0){
                 containerProdutos.innerHTML += `
                 <div class="produto-single">
-                    <p>Jogo 2D</p>
-                    <img src="`+val.imagem+`" / id="img-jogos">
+                    <p>2D</p>
+                    <a href="jogos/godofwar.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
                     <p>`+val.nome+`</p>
                     <p>R$ `+val.preco+`</p>
                     <a key="`+val.id+`">Adicionar ao carrinho<a/>
@@ -209,17 +310,174 @@
                 `;
                 }
 
-                if (val.id >= 3 && val.id <=5){
+                if (val.id == 1){
                 containerProdutos.innerHTML += `
                 <div class="produto-single">
-                    <p>Puzzle/Terror</p>
-                    <img src="`+val.imagem+`" / id="img-jogos">
+                    <p>2D</p>
+                    <a href="jogos/godofwar.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
                     <p>`+val.nome+`</p>
                     <p>R$ `+val.preco+`</p>
                     <a key="`+val.id+`">Adicionar ao carrinho<a/>
                 </div>
                 `;
                 }
+
+                if (val.id == 2){
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <p>2D</p>
+                    <a href="jogos/godofwar.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
+                    <p>`+val.nome+`</p>
+                    <p>R$ `+val.preco+`</p>
+                    <a key="`+val.id+`">Adicionar ao carrinho<a/>
+                </div>
+                `;
+                }
+
+                if (val.id == 3){
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <p>Puzzle/Terror</p>
+                    <a href="jogos/godofwar.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
+                    <p>`+val.nome+`</p>
+                    <p>R$ `+val.preco+`</p>
+                    <a key="`+val.id+`">Adicionar ao carrinho<a/>
+                </div>
+                `;
+                }
+
+                if (val.id == 4){
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <p>Puzzle/Terror</p>
+                    <a href="jogos/godofwar.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
+                    <p>`+val.nome+`</p>
+                    <p>R$ `+val.preco+`</p>
+                    <a key="`+val.id+`">Adicionar ao carrinho<a/>
+                </div>
+                `;
+                }
+
+                if (val.id == 5){
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <p>Puzzle/Terror</p>
+                    <a href="jogos/godofwar.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
+                    <p>`+val.nome+`</p>
+                    <p>R$ `+val.preco+`</p>
+                    <a key="`+val.id+`">Adicionar ao carrinho<a/>
+                </div>
+                `;
+                }
+
+                if (val.id == 6){
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <p>FPS</p>
+                    <a href="jogos/godofwar.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
+                    <p>`+val.nome+`</p>
+                    <p>R$ `+val.preco+`</p>
+                    <a key="`+val.id+`">Adicionar ao carrinho<a/>
+                </div>
+                `;
+                }
+
+                if (val.id == 7){
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <p>FPS</p>
+                    <a href="jogos/godofwar.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
+                    <p>`+val.nome+`</p>
+                    <p>R$ `+val.preco+`</p>
+                    <a key="`+val.id+`">Adicionar ao carrinho<a/>
+                </div>
+                `;
+                }
+
+                if (val.id == 8){
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <p>RPG</p>
+                    <a href="jogos/godofwar.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
+                    <p>`+val.nome+`</p>
+                    <p>R$ `+val.preco+`</p>
+                    <a key="`+val.id+`">Adicionar ao carrinho<a/>
+                </div>
+                `;
+                }
+
+                if (val.id == 9){
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <p>RPG</p>
+                    <a href="jogos/godofwar.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
+                    <p>`+val.nome+`</p>
+                    <p>R$ `+val.preco+`</p>
+                    <a key="`+val.id+`">Adicionar ao carrinho<a/>
+                </div>
+                `;
+                }
+
+                if (val.id == 10){
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <p>Ação-aventura</p>
+                    <a href="jogos/godofwar.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
+                    <p>`+val.nome+`</p>
+                    <p>R$ `+val.preco+`</p>
+                    <a key="`+val.id+`">Adicionar ao carrinho<a/>
+                </div>
+                `;
+                }
+
+                if (val.id == 11){
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <p>Ação-aventura</p>
+                    <a href="jogos/godofwar.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
+                    <p>`+val.nome+`</p>
+                    <p>R$ `+val.preco+`</p>
+                    <a key="`+val.id+`">Adicionar ao carrinho<a/>
+                </div>
+                `;
+                }
+
+                if (val.id == 12){
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <p>Ação-aventura</p>
+                    <a href="jogos/devilmycry5.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
+                    <p>`+val.nome+`</p>
+                    <p>R$ `+val.preco+`</p>
+                    <a key="`+val.id+`">Adicionar ao carrinho<a/>
+                </div>
+                `;
+                }
+
+                if (val.id == 13){
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <p>Ação-aventura</p>
+                    <a href="jogos/spiderman.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
+                    <p>`+val.nome+`</p>
+                    <p>R$ `+val.preco+`</p>
+                    <a key="`+val.id+`">Adicionar ao carrinho<a/>
+                </div>
+                `;
+                }
+
+                if (val.id == 14){
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <p>Futebol</p>
+                    <a href="jogos/fifa23.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
+                    <p>`+val.nome+`</p>
+                    <p>R$ `+val.preco+`</p>
+                    <a key="`+val.id+`" / id="id-imagens">Adicionar ao carrinho<a/>
+                </div>
+                `;
+                }
+
             }
             )
         }
@@ -294,5 +552,6 @@
     src="https://kit.fontawesome.com/f9e19193d6.js"
     crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    </section>
 </body>
 </html>
