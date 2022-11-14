@@ -34,6 +34,7 @@ body {
 }
 
 /* Navbar */
+
 #navbar{
     display: flex;
     background-color: black;
@@ -43,11 +44,6 @@ body {
     top: 0;
     width: 100%;
     z-index: 10;
-}
-
-nav ul li {
-    margin-right: 50px;
-    text-align: center;
 }
 
 #navbar .navbar-container {
@@ -75,13 +71,7 @@ nav ul li {
 
 #navbar .navbar-container ul li {
     padding: 0 90px;
-    transition: all 300ns ease;
     text-align: center;
-}
-
-#navbar .navbar-container ul li:hover {
-    color: #eb00e6;
-    cursor: pointer;
 }
 
 #navbar .navbar-container ul li:nth-child(1) {
@@ -113,7 +103,6 @@ nav ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 #showcase .showcase-container h2 {
@@ -241,7 +230,6 @@ input {
 
 #footer .footer-content .footer-menu .footer-menu-item {
     margin: 25px 0;
-    transition: all 300ms aese;
 }
 
 #footer .footer-content .footer-menu p {
@@ -258,7 +246,6 @@ input {
 .socials i {
     margin: 0 20px;
     font-size: 1.7rem;
-    transition: all 300ms ease;
 }
 
 /* footer info*/
@@ -282,7 +269,6 @@ input {
 
 .footer-info .footer-info-items .footer-info-item {
     margin: 0 10px;
-    transition: all 300ms ease;
 }
 
 .footer-info .rights .country{
@@ -290,10 +276,6 @@ input {
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 10px;
-}
-
-.footer-info .rights .country p {
-    transition: all 300ms ease;
 }
 
 .footer-info .rights .country .brasil-flag {
