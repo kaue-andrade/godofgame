@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="imagens/controle-de-video-game.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -79,36 +78,27 @@
         #img-id {
             background-color: black;
         }
-
-        
-        section {
-            width: 1280px;
-        }
-
-        @media (max-width: 1200px) {
-            selection{
-                width: 1000px;
-            }
-        }
-
-        @media (max-width: 600px) {
-            selection{
-                height: 400px;
-                width: 575px;
-            }
-        }
+                
     </style>
 </head>
 <body>
     <!--Navbar-->
+    
+    <!--Navbar-->
     <navbar id="navbar">
+        <div class="nav">
         <a href="index.html"><img src="imagens/logo1.gif" alt="Logo" class="logo"></a>
-        <div class="navbar-container">
-            <ul class="navbar-items">
-                <li class="navbar-item" style="height: 19px;"><a href="index.html" style="color: white; text-decoration: none;">Início</a></li>
-                <li class="navbar-item"><a href="index.html#jogos" style="color: white; text-decoration: none;" style="height: 19px;">Jogos</a></li>
-                <li class="navbar-item" style="height: 19px;"><a href="quem_somos.html" style="color: white; text-decoration: none;">Quem somos</a></li>
-            </ul>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#" id="link-nav">Início</a></li>
+          <li><a href="index.html#jogos" id="link-nav">Sobre</a></li>
+          <li><a href="quem_somos.html" id="link-nav">Quem somos</a></li>
+          <li><a href="contato.html" id="link-nav">Contato</a></li>
+        </ul>
     </div>
     </navbar>
 
@@ -546,7 +536,7 @@
     </footer>
 
     <!-- Scripts -->
-
+    <script src="mobile-navbar.js"></script>
     <script
     src="https://kit.fontawesome.com/f9e19193d6.js"
     crossorigin="anonymous"></script>
