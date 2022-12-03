@@ -6,7 +6,7 @@
 
 # Links úteis: 
 
-**Site**: https://kaue-andrade.github.io/godofgame/index.html
+**Site**: https://kaue-andrade.github.io/godofgame/index.html </br>
 **Trello**: https://trello.com/b/zDWBsCMt/gest%C3%A3o-de-projetos
 
 # Desenvolvedores: 
