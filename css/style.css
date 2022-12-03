@@ -128,7 +128,7 @@ body {
     }
     .nav-list {
       position: absolute;
-      top: 8vh;
+      top: 16vh;
       right: 0;
       width: 50vw;
       height: 92vh;
@@ -306,9 +306,11 @@ input {
 
 #footer .footer-content{
     display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center; 
     width: 50%;
     margin: auto;
-    justify-content: space-between;
     text-align: center;
 }
 
@@ -379,4 +381,15 @@ input {
     height: 100px;
     width: auto;
     cursor: pointer;
+}
+
+@media (max-width:948px){
+
+    .slider-content{
+        width: 100%;
+    }
+
+    .navigation{
+        width: 10em;
+    }
 }
