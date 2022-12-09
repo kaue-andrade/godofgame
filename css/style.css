@@ -108,6 +108,10 @@ body {
     border-right: 1px solid white;
 }
 
+.nav-list li:nth-child(4) {
+    border-right: 1px solid white;
+}
+
 .mobile-menu {
     display: none;
     cursor: pointer;
@@ -205,22 +209,15 @@ body {
 
 /* Informações básicas */
 
-.holder {
+.info-bas {
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     color: white;
     background: url("../imagens_jogos/assassins-creed.png") center center/cover;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: color;
-}
-
-.holder p {
-    position: absolute;
-    font-size: 32px;
-    font-family: sans-serif;
-    text-align: center;
 }
 
 /* Slider */
@@ -387,9 +384,10 @@ input {
     text-align: center;
     height: 100px;
     width: auto;
+    cursor: pointer;
 }
 
-@media (max-width:1420px){
+@media (max-width:948px){
 
     .slider-content{
         width: 100%;

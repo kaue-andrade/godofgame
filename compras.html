@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprar</title>
+  <link rel="stylesheet" href="css/compras.css">
+  <link rel="shortcut icon" href="imagens/controle-de-video-game.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+  <style>
+    .container {
+        top: 20%;
+    }
+  </style>
+</head>
+<body style="background-color: black;">
+
+    <navbar id="navbar">
+        <div class="nav">
+        <a href="index.html"><img src="imagens/logo1.gif" alt="Logo" class="logo-navbar"></a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#" id="link-nav">Início</a></li>
+          <li><a href="index.html#jogos" id="link-nav">Jogos</a></li>
+          <li><a href="quem_somos.html" id="link-nav">Quem somos</a></li>
+          <li><a href="compras.html" id="link-nav">Comprar</a></li>
+          <li><a href="sugestoes.html" id="link-nav">Sugestões</a></li>
+        </ul>
+    </div>
+    </navbar>
+
+    <div class="container">
+    <div class="buttonsForm">
+    <div class="btnColor"></div>
+    <button id="btnCartao">Cartão</button>
+    <button id="btnPix">Pix</button>
+    </div>
+
+    <form id="cartao">
+      <input type="text" placeholder="Nome do Titular" required />
+      <input type="text" placeholder="Conta" required />
+      <input type="text" placeholder="Agência" required />
+      <input type="text" placeholder="Código de Segurança" required />
+      <br>
+      <br>
+      <label for="data"><b>Vencimento do Cartão:</b></label>
+      <br>
+      <br>
+      <input type="date" name="data_vencimento" id="data_vencimento" required>
+      <div class="divCheck">
+
+      </div>
+      <button type="submit">Confirmar</button>
+    </form>
+
+    <form id="pix">
+      <div>
+        <img src="http://product.corel.com/help/Common/CDGS/540223850/Shared/CorelDRAW-QR-code.png" style="width: 250px; height: 250px; padding-top: 50px; padding-left: 50px;">
+        
+      </div>
+      
+      
+      <div class="divCheck">
+      </div>
+      <button type="submit">Confirmar</button>
+    </form>
+  </div>
+
+  <script src="mobile-navbar.js"></script>
+  <script src="compras.js"></script>
+</body>
+</html>
