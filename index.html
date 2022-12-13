@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>God of Games</title>
+    <script src="carrossel.js" defer></script>
     <style>
         #produtos{
         max-width: 900px; 
@@ -120,46 +121,15 @@
 
     <!--Slides-->
 
-    <div class="slides-container" id="jogos-slides">
-    <div class="slider-content">
-        <div class="slides">
-            <input type="radio" name="slide" id="slide1" checked>
-            <input type="radio" name="slide" id="slide2">
-            <input type="radio" name="slide" id="slide3">
-            <input type="radio" name="slide" id="slide4">
-            <input type="radio" name="slide" id="slide5">
-
-            <div class="slide s1">
-                <a href="jogos/godofwar.html"><img src="imagens_jogos/god-of-war.png" alt="Gof of War 2018"></a>
-            </div>
-
-            <div class="slide">
-                <a href="jogos/zeldabotw.html"><img src="imagens_jogos/zelda-breath-of-the-wild.jpg" alt="Zelda Breath of the Wild"></a>
-            </div>
-
-            <div class="slide">
-                <a href="jogos/devilmycry5.html"><img src="imagens_jogos/devil-may-cry-5.jpg" alt="Devil My Cry 5"></a>
-            </div>
-
-            <div class="slide">
-                <a href="jogos/fifa23.html"><img src="imagens_jogos/fifa-23.png" alt="Fifa 23"></a>
-            </div>
-
-            <div class="slide">
-                <a href="jogos/spiderman.html">
-                    <img src="imagens_jogos/spider-man.jpg" alt="Spider-man">
-                </a>
-            </div>
+    <div class="container-carrossel"></div>
+    <div class="carrossel">
+        <div class="container" id="img">
+            <img src="imagens_jogos/god-of-war.png" alt="God of War" style="height: 500px; width: 500px;">
+            <img src="imagens_jogos/zelda-breath-of-the-wild.jpg" alt="Zelda" style="height: 500px; width: 500px;">
+            <img src="imagens_jogos/devil-may-cry-5.jpg" alt="Devil My Cry 5" style="height: 500px; width: 500px;">
+            <img src="imagens_jogos/fifa-23.png" alt="FIFA 23" style="height: 500px; width: 500px;">
+            <img src="imagens_jogos/spider-man.png" alt="Spider-Man" style="height: 500px; width: 500px;">
         </div>
-    
-        <div class="navigation">
-            <label class="bar" for="slide1"></label>
-            <label class="bar" for="slide2"></label>
-            <label class="bar" for="slide3"></label>
-            <label class="bar" for="slide4"></label>
-            <label class="bar" for="slide5"></label>
-        </div>
-
     </div>
     </div>
 
@@ -168,7 +138,7 @@
     <div class="container-jogos">
         <br>
         <h2 id="jogos">Jogos</h2>
-        <div id="produtos">
+        <div id="produtos" style="padding-left: 10px">
     
         </div>
     
@@ -294,8 +264,8 @@
                 containerProdutos.innerHTML += `
                 <div class="produto-single">
                     <p>2D</p>
-                    <a href="jogos/godofwar.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
-                    <a href="jogos/devilmycry5.html" id="img-id"><p>`+val.nome+`</p></a>
+                    <a href="jogos/katanazero.html" id="img-id"><img src="`+val.imagem+`" / id="img-jogos"></a>
+                    <a href="jogos/katanazero.html" id="img-id"><p>`+val.nome+`</p></a>
                     <p>R$ `+val.preco+`</p>
                     <a key="`+val.id+`">Adicionar ao carrinho<a/>
                 </div>
