@@ -327,14 +327,6 @@ body {
 
 @media (max-width:948px){
 
-    .slider-content{
-        width: 100%;
-    }
-
-    .navigation{
-        width: 10em;
-    }
-
     .nav-list li:nth-child(1) {
         border-right: 0px solid white;
     }

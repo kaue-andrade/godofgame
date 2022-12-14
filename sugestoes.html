@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/controle-de-video-game.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/comente.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Sugestões - God of Game</title>
 </head>
 <body>
-    <!--Navbar-->
+
     <navbar id="navbar">
         <div class="nav">
         <a href="index.html"><abbr title="Página inicial da God of Game"><img src="imagens/logo1.gif" alt="Logo" class="logo-navbar"></abbr></a>
@@ -20,62 +20,55 @@
           <div class="line3"></div>
         </div>
         <ul class="nav-list">
-            <li><a href="index.html" id="link-nav">Início</a></li>
-            <li><a href="index.html#jogos" id="link-nav">Jogos</a></li>
-            <li><a href="quem_somos.html" id="link-nav">Quem somos</a></li>
-            <li><a href="compras.html" id="link-nav">Comprar</a></li>
-            <li><a href="sugestoes.html" id="link-nav">Sugestões</a></li>
+          <li><a href="index.html" id="link-nav">Início</a></li>
+          <li><a href="index.html#jogos" id="link-nav">Jogos</a></li>
+          <li><a href="quem_somos.html" id="link-nav">Quem somos</a></li>
+          <li><a href="compras.html" id="link-nav">Comprar</a></li>
+          <li><a href="sugestoes.html" id="link-nav">Sugestões</a></li>
         </ul>
     </div>
     </navbar>
 
-    <!--Showcase-->
-
-    <div id="showcase">
+        <br><br><br><br><br><br><br>
+        <div class="box" style="display: grid; place-items: center;">
+         <table class="table">
+          <form action="/action_page.php">
+            
+        <label for="txtfname" >Nome:</label> <br>
+        <input type="text" name="txtfname" id="txtfname" value="" required>
+        <br>
+        <label for="txtemail" >E-mail:</label><br>
+        <input type="text" name="txtemail" id="txtemail" value="" required>
+        <br>
+        <label for="txtsex">Sexo:</label><br>
+        <label>
+        <input type="radio" name="sexo" id="txtsex"> M</label>
+        <label>
+            <input type="radio" name="sexo" id="txtsex"> F</label>
+        <label>
+        <input type="radio" name="sexo" id="txtsex"> I</label>
+        <br>
+        <label>Tipo de Sugestão:</label><br>
+        <select id="tiposugestao">
+            <option>Jogos</option>
+            <option>Promoção</option>
+            <option>Reclamação</option>
+            <option>Política de Privacidade</option>
+        </select>
     
-    </div>
-
-    <!-- Footer-->
-
-    <footer id="footer">
-        <div class="footer-content">
-            <img src="imagens/logo2.png" alt="Logo" class="logo">
-            <ul class="footer-menu">
-                <p>Desenvolvedores</p>
-                <li class="footer-menu-item">Antonio Carlos Borges de Souza</li>
-                <li class="footer-menu-item">Ítalo Ricardo de Andrade Silva</li>
-                <li class="footer-menu-item">Kauê Andrade dos Santos</li>
-            </ul>
-
-            <div class="socials">					
-                <a href="https://www.instagram.com/ifbaeuclides/" style="color: white;" target="_blank"><i class="fab fa-instagram"></i></a>
-                <i class="fab fa-twitter"></i>
-                <a href="https://www.facebook.com/IFBAEuclides" style="color: white;" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            </div>
-        </div>
-        <div class="footer-info">
-            <ul class="footer-info-items">
-                <li class="footer-info-item"><a href="https://docs.google.com/document/d/12pw2y7gyQs3tpCjyJyY-7-SVb7Ql4m9W2T1EBjLOpnM/edit?usp=sharing" style="color:gray; text-decoration: none;" target="_blank;">Política de privacidade</a></li>
-                <li class="footer-info-item"><a href="https://docs.google.com/document/d/10TInkfFhlJg85j6u6hVIqTlmor4QNMKSTVXhX5gG2yk/edit?usp=sharing" style="color: gray; text-decoration: none;" target="_blank">Sobre os jogos</a></li>
-            </ul>
-
-            <div class="rights">
-                <div class="country">
-                    <p>Brasil</p>
-                    <img src="imagens/brasil.png" alt="Bandeira do Brasil" class="brasil-flag">
-                </div>
-                <p>&copy; 2022 God of Games</p>
-            </div>
-
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-
-    <script
-    src="https://kit.fontawesome.com/f9e19193d6.js"
-    crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+        <br>
+        <label for="txtcomente" >Comentário:</label><br>
+        <textarea name="comente" id="txtcomente" cols="30" rows="10" maxlength="500" required></textarea>
+        <br>
+        <br>
+         <p>
+            <button onclick='document.write(document.getElementById("txtcomente").value);'>Pegar o valor</button>
+         </p>
+         <br>
     
+          </form>
+         </table>
+        </div>
+        <script src="mobile-navbar.js"></script>
 </body>
 </html>
