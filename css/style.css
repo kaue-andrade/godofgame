@@ -13,7 +13,6 @@ body {
     width: 100vw;
     overflow-x: hidden;
     background-color: black;
-
 }
 
 /* Utility Classes */
@@ -212,18 +211,10 @@ body {
     align-items: center;
     color: white;
     background: url("../imagens_jogos/jogos_da_loja.gif") center center/cover;
-    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: color;
 }
 
 /* Slider */
-
-.container-carrossel {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-}
 
 .carrossel {
     box-shadow: 2px 2px 4px black;
@@ -231,6 +222,7 @@ body {
     height: 500px;
     width: 500px;
     border-radius: 30px;
+    margin: auto;
 }
 
 .container {
@@ -244,6 +236,7 @@ body {
     height: 500px;
     width: 500px;
 }
+
 
 /* Footer */
 
