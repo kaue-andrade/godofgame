@@ -257,4 +257,96 @@ button[type="submit"] {
     }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+
+.container {
+
+  background-color: whitesmoke;
+
+  width: 400px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+}
+
+body {
+
+
+  display: flex;
+
+  justify-content: center;
+}
+
+
+form {
+  position: absolute;
+  margin-top: 80px;
+  transition: .9s;
+  width: 300px;
+
+
+}
+.btnColor {
+  position: absolute;
+  width: 108px;
+  height: 100%;
+  background: linear-gradient(to right, #020081, #8d0bf8);
+  border-radius: 30px;
+
+}
+
+.buttonsForm {
+  margin-top: 35px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 0 7px 0 rgb(130, 154, 177);
+  
+}
+
+.buttonsForm button {
+
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 20px 29px;
+}
+
+
+button[type="submit"] {
+  background: #380079;
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+
+
+  padding: 5px 0 5px 10px;
+  font-size: 15px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+input[type="text"], input[type="password"] {
+  border: none;
+  margin-top: 40px;
+  border-radius: 60px;
+  padding: 8px 0 8px 35px;
+  outline: none;
+  width: 100%;
+}
+
+#pix {
+  left: 700px;
+}
+
+
+
+
+
+
 
