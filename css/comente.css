@@ -1,4 +1,9 @@
 .box{font-family: Arial, Helvetica, sans-serif;
+    margin-top: -27px;
+    background-image: url(https://images2.alphacoders.com/521/521477.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 .txtcomenteinp{
     size: 60px;
@@ -10,6 +15,10 @@
     margin: 0;
     padding: 0;
 }
+label{
+    color: #fff;
+}
+
 
 /* Alteração nas propriedades do body*/
 
@@ -179,33 +188,7 @@ body {
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
-/* Showcase */
 
-#showcase{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background: url("../imagens/god_of_game.gif") center center/cover;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: color;
-}
-
-#showcase .showcase-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#showcase .showcase-container h2 {
-    font-size: 4rem;
-}
-
-#showcase .showcase-container p {
-    margin: 15px 0;
-    font-size: 1.1rem;
-}
 
 /* Informações básicas */
 
@@ -219,16 +202,6 @@ body {
     background-blend-mode: color;
 }
 
-/* Slider */
-
-.carrossel {
-    box-shadow: 2px 2px 4px black;
-    overflow: hidden;
-    height: 500px;
-    width: 500px;
-    border-radius: 30px;
-    margin: auto;
-}
 
 .container {
     display: flex;
