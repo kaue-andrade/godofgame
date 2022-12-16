@@ -104,6 +104,10 @@ body {
     margin-left: 6px;
 }
 
+#link-nav:hover{
+    opacity: 80%;
+}
+
 .nav-list li:nth-child(1) {
     border-right: 1px solid white;
 }
